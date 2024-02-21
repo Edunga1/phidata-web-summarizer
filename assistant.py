@@ -1,6 +1,6 @@
 import sys
 
-from phi.assistant import Assistant
+from phi.assistant.assistant import Assistant
 from requests import get
 
 
@@ -16,7 +16,6 @@ def get_html(url: str):
     return get(url).text
 
 
-# Url will be passed cli arguments
 url = sys.argv[1]
 message = f"""
 `${url}` 사이트의 내용을 요약해주세요.
