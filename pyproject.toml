@@ -9,6 +9,7 @@ python = "^3.10"
 phidata = "^2.3.41"
 openai = "^1.12.0"
 duckduckgo-search = "^4.4.3"
+google-cloud-aiplatform = "^1.42.1"
 
 
 [build-system]
