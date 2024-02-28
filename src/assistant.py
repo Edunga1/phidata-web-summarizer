@@ -18,7 +18,7 @@ def get_html(url: str):
 
 url = sys.argv[1]
 message = f"""
-`${url}` 사이트의 내용을 요약해주세요.
+`{url}` 사이트의 내용을 요약해주세요.
 
 horizontal line으로 총 3개 구역을 나눠주세요.
 
