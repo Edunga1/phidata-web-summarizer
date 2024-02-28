@@ -1,19 +1,8 @@
 import sys
 
 from phi.assistant.assistant import Assistant
-from requests import get
 
-
-def get_html(url: str):
-    """Get the HTML of a webpage.
-
-    Args:
-        url (str): The URL of the webpage.
-
-    Returns:
-        str: The HTML of the webpage.
-    """
-    return get(url).text
+from toolkit.web import WebVisitor
 
 
 url = sys.argv[1]
@@ -27,5 +16,5 @@ horizontal line으로 총 3개 구역을 나눠주세요.
 마지막 구역은 모든 덧글을 요약해 주세요. 원문은 포함하지 않아도 됩니다.
 """
 
-assistant = Assistant(tools=[get_html], show_tools_calls=True)
+assistant = Assistant(tools=[WebVisitor()], show_tools_calls=True)
 assistant.print_response(message, markdown=True)
