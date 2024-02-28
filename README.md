@@ -1,7 +1,7 @@
 Example of GPT-4 turbo
 
 ```shell
-$ python assistant.py https://news.hada.io/topic?id=13211
+$ python src/assistant.py https://news.hada.io/topic?id=13211
 
 ╭──────────┬──────────────────────────────────────────────────────────────────────────────────╮
 │          │                                                                                  │
@@ -66,7 +66,7 @@ $ python assistant.py https://news.hada.io/topic?id=13211
 Example of Gemini vision pro
 
 ```shell
-$ python gemini.py
+$ python src/gemini.py
 ╭──────────┬────────────────────────────────────────────────────────────────────────╮
 │ Message  │ 이름이 뭔가요? 당신은 어떤 언어 모델인가요?                            │
 ├──────────┼────────────────────────────────────────────────────────────────────────┤
