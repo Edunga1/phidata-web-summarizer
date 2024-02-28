@@ -11,6 +11,6 @@ from phi.llm.gemini import Gemini
 vertexai.init(project=getenv("PROJECT_ID"), location=getenv("LOCATION"))
 
 assistant = Assistant(
-    llm=Gemini(model="gemini-1.0-pro-vision"),
+    llm=Gemini(model="gemini-1.0-pro"),
 )
 assistant.print_response("이름이 뭔가요? 당신은 어떤 언어 모델인가요?", markdown=True)
