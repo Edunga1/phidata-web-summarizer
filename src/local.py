@@ -8,7 +8,7 @@ from toolkit.web import WebVisitor
 
 url = sys.argv[1]
 message = f"""
-Summarize the content of the site.
+Summarize the content of the site: "{url}".
 
 Please divide it into 3 sections with horizontal lines.
 
@@ -21,7 +21,7 @@ The last section should summarize all comments. You don't need to include the fu
 assistant = Assistant(
     tools=[WebVisitor()],
     llm=Ollama(
-        model='gemma:7b',
+        model='openhermes',
         host='localhost:11434',
         options={'temperature': 0},
     ),
